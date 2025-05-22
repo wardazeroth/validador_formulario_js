@@ -1,0 +1,28 @@
+
+
+
+#box {
+    background-color: rgb(119, 211, 206);
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+
+form {
+    background-color: rgb(78, 100, 100);
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+#card {
+    padding: 1rem;
+}
+
+label {
+    color: beige;
+    ;
+}
+
+h2 {
+    text-align: center;
+}
