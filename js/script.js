@@ -5,8 +5,9 @@ function validar() {
     const ret_validar_direccion = validarDireccion();
     const ret_validar_url = validarUrl();
     const ret_ingresar = ingresar();
-
-    return ret_validar_nombre && ret_validar_password && ret_validar_telefono && ret_validar_direccion && ret_validar_url && ret_ingresar
+    const ret_validar_select = validarSelect()
+;
+    return ret_validar_nombre && ret_validar_password && ret_validar_telefono && ret_validar_direccion && ret_validar_url && ret_ingresar && ret_validar_select;
 
 }
 
@@ -267,4 +268,17 @@ function mostrarPassword2() {
     }
 }
 
+function validarSelect() {
+    const select = document.getElementById('miSelect')
+    let seleccion = select.value
 
+    if (seleccion == 'Seleccione una comuna') {
+
+        seleccion = null
+        console.log('comuna:', seleccion)
+        return true
+    } else {
+        console.log('comuna:', seleccion)
+        return true
+    }
+}
